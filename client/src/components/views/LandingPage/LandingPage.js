@@ -10,6 +10,7 @@ function LandingPage() {
 
     const [Videos, setVideos] = useState([])
 
+    // Dom이 로드되자 마자 무엇이 할지를 설정
     useEffect(() => {
         axios.get('/api/video/getVideos')
         .then(response => {
@@ -51,7 +52,6 @@ function LandingPage() {
             <span style={{ marginLeft: '3rem' }}> {video.views}</span>
             - <span> {moment(video.createdAt).format("MMM Do YY")} </span>
         </Col>
-
 
     })
 
