@@ -38,7 +38,7 @@ function LandingPage() {
                     }
                 }
                 alt = "thumbnail"
-                src = {`http://http://49.50.166.25/:5000/${video.thumbnail}`
+                src = {`http://49.50.166.25/:5000/${video.thumbnail}`
                 }
                 />
                 <div className="duration"
